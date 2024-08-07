@@ -14,12 +14,12 @@ namespace Tienda_de_dispositivos
         public void TipoDispositivo()
         {
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("Tipos de dispositivos disponibles: ");
+            Console.WriteLine("Tipos de dispositivos disponibles\n");
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("1. Teléfono");
             Console.WriteLine("2. Tablet");
             Console.WriteLine("3. Ordenador (Computadora)");
-            Console.Write("Seleccione una opción:");
+            Console.Write("\nSeleccione una opción:");
         }
         public void AgregarProducto()
         {

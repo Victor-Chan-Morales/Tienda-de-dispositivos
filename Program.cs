@@ -15,7 +15,7 @@ while (ingresar)
         Console.WriteLine("2. BUSCAR PRODUCTO");
         Console.WriteLine("3. LISTAR PRODUCTO");
         Console.WriteLine("4. SALIR DEL PROGRAMA");
-        Console.WriteLine("SELECCIONE UNA OPCIÓN");
+        Console.Write("SELECCIONE UNA OPCIÓN: ");
         int opcionMenuPrincipal=int.Parse(Console.ReadLine());
         Console.ForegroundColor = ConsoleColor.White;
         switch (opcionMenuPrincipal)
@@ -31,6 +31,9 @@ while (ingresar)
                 break;
             case 4:
                 ingresar = false;
+                break;
+            default:
+                Console.WriteLine("Esta opción no está disponible. Ingrese una opción correcta."); Console.ReadKey(true);    
                 break;
         }
     }
